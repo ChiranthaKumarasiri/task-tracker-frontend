@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@media (max-width: 600px) {
+  .app {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
 
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .input-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input {
+    width: 100% !important; /* full width on mobile */
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+
+  .task-list li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .task-list li button {
+    align-self: flex-end;
+  }
+}
 body {
   background: linear-gradient(to right, #dfe9f3, #ffffff);
   font-family: 'Inter', sans-serif;
